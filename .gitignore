@@ -1,0 +1,56 @@
+# Dependências
+/node_modules
+/package-lock.json
+/yarn.lock
+
+# Arquivos de configuração sensíveis
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Diretórios de build
+/dist
+/build
+/.next
+/out
+/.nuxt
+
+# Diretórios e arquivos de cache
+/.cache
+/tmp
+/temp
+
+# Arquivos de log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretórios e arquivos de teste
+/cypress/videos/
+/cypress/screenshots/
+/cypress/reports/
+
+# Arquivos de editor e configurações de IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*.swn
+*.DS_Store
+
+# Outros arquivos e diretórios
+/.pnp
+.pnp.js
+/public/hot/
+/public/storage
+/storage/*.key
+/vendor/
+/.htaccess
+/.env.backup
+.htpasswd
+
