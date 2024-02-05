@@ -82,7 +82,8 @@ blog_pesquisa/
 │   ├── fixtures   // Dados
 │   ├── plugins   // Plugins
 │   ├── support      // Comandos personalizados
-│
+│   └──integration
+│          └──blog_pesquisa.cy.js  // Apenas para facilicar a Build
 ├── Features/
 │    └── Plano de testes.md      // Cenarios de testes
 │
