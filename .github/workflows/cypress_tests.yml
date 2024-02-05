@@ -2,29 +2,22 @@ name: Cypress Tests
 
 on: [push, pull_request]
 
-
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-
-    - name: Setup Node
-      uses: actions/setup-node@v2
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
       with:
-        node-version: 14
-
-    - name: Install Dependencies
-      run: npm install
-
-    - name: Cypress.io
-      uses: cypress-io/github-action@v6.6.1
-            
+        node-version: '14'
+    - run: npm install
+    - uses: cypress-io/github-action@v2
       with:
         start: npm start
         wait-on: 'http://localhost:3000'
         wait-on-timeout: 300
         command: npx cypress run --spec "cypress/e2e/blog_pesquisa.cy.js"
+        record: false
+        publish-summary: true
+        component: false
 
