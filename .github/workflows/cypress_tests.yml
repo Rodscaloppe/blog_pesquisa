@@ -15,7 +15,7 @@ jobs:
         with:
           start: npm start
           wait-on: "http://localhost:3000"
-          wait-on-timeout: 300
+          wait-on-timeout: 100
           command: npx cypress run --spec "cypress/integration/blog_pesquisa.cy.js"
           record: false
           publish-summary: true
