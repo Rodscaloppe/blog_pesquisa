@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "Validacao pesquisa.",
   "main": "index.js",
-  "scripts": {
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
-    "test": "npm run cy:run"
+  "scripts": 
+  {
+  "start": "node app.js",
+  "test": "cypress run",
+  "cy:open": "cypress open",
+  "cy:run": "cypress run"
   },
   "author": "Rodolfo Scaloppe",
   "license": "ISC",
